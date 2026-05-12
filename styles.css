@@ -726,3 +726,138 @@ img { max-width: 100%; display: block; }
 }
 .footer a { color: var(--stone); }
 .footer a:hover { color: var(--ochre); }
+
+/* Tight section override — half the default vertical padding */
+.section.section-tight { padding-top: clamp(1.5rem, 3vw, 2.5rem); padding-bottom: clamp(1.5rem, 3vw, 2.5rem); }
+
+/* ===== Problem photo grid (Problems page) ===== */
+.problem-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+  max-width: var(--container);
+  margin: 0 auto;
+}
+.problem-card {
+  position: relative;
+  overflow: hidden;
+  background: var(--charcoal);
+}
+.problem-card img {
+  width: 100%;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.6s ease;
+}
+.problem-card:hover img { transform: scale(1.04); }
+.problem-card figcaption {
+  position: absolute;
+  left: 1rem;
+  bottom: 1rem;
+  background: var(--white);
+  color: var(--charcoal);
+  padding: 0.45rem 1.1rem;
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 1.05rem;
+  border-left: 3px solid var(--ochre);
+}
+.problem-grid-note {
+  text-align: center;
+  font-family: var(--serif);
+  font-style: italic;
+  color: var(--charcoal-soft);
+  font-size: 1.05rem;
+  margin-top: 2rem;
+}
+@media (max-width: 800px) {
+  .problem-grid { grid-template-columns: 1fr; max-width: 480px; }
+}
+
+/* ===== Quote band — image + pull-quote split (Problems page) ===== */
+.quote-band {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  background: var(--paper);
+  border-top: 1px solid var(--stone);
+  border-bottom: 1px solid var(--stone);
+}
+.quote-band-photo { overflow: hidden; }
+.quote-band-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  min-height: 360px;
+}
+.quote-band-text {
+  padding: clamp(2.5rem, 5vw, 4.5rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.quote-band-text .section-eyebrow { color: var(--ochre); }
+.quote-band-text blockquote {
+  font-family: var(--serif);
+  font-size: clamp(1.4rem, 2.4vw, 1.9rem);
+  line-height: 1.35;
+  color: var(--charcoal);
+  margin: 0.5rem 0 1.25rem;
+  font-weight: 400;
+}
+.quote-attrib {
+  font-family: var(--serif);
+  font-style: italic;
+  color: var(--charcoal-soft);
+  margin-bottom: 2rem;
+}
+.quote-band-text .btn { align-self: flex-start; }
+@media (max-width: 800px) {
+  .quote-band { grid-template-columns: 1fr; }
+  .quote-band-photo img { min-height: 280px; max-height: 380px; }
+}
+
+/* ===== Buyers feature — image + text split (Buyers page) ===== */
+.buyers-feature {
+  background: var(--charcoal);
+  color: var(--paper);
+  margin: clamp(2rem, 4vw, 3.5rem) 0;
+}
+.buyers-feature-inner {
+  display: grid;
+  grid-template-columns: 0.6fr 1.4fr;
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 0 var(--gutter);
+  align-items: stretch;
+}
+.buyers-feature-photo { overflow: hidden; }
+.buyers-feature-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  display: block;
+}
+.buyers-feature-text {
+  padding: clamp(1.75rem, 3.5vw, 3rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.buyers-feature-text .section-eyebrow { color: var(--ochre); }
+.buyers-feature-text h2 { color: var(--paper); margin-bottom: 1.25rem; }
+.buyers-feature-text p { color: var(--stone); font-size: 1.08rem; line-height: 1.7; }
+.buyers-feature-attrib {
+  font-family: var(--serif);
+  font-style: italic;
+  color: var(--ochre) !important;
+  margin-top: 1.5rem;
+  font-size: 1.05rem !important;
+}
+@media (max-width: 800px) {
+  .buyers-feature { margin: 1.5rem 0; }
+  .buyers-feature-inner { grid-template-columns: 1fr; padding: 0; }
+  .buyers-feature-photo img { max-height: 280px; }
+}
