@@ -1,87 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Problems We Solve | Capstone Property Collective</title>
-<link rel="icon" type="image/x-icon" href="favicon.ico">
-<link rel="icon" type="image/png" href="images/favicon.png">
-<meta name="description" content="Divorce, inheritance, probate, foreclosure, back taxes, bankruptcy — there isn't a situation too complicated for us. We love problems.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Problems We Solve — Capstone Property Collective</title>
+<meta name="description" content="Divorce. Probate. Foreclosure. Bad shape. Vacant. Whatever you're dealing with — we've seen it before." />
+<link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-<nav id="navbar">
-  <div class="logo">Capstone <span>Property</span> Collective</div>
-  <ul class="nav-links">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="problems.html">Problems We Solve</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="buyers.html">Buyers</a></li>
-    <li><a href="contact.html">Contact</a></li>
-    <li><a href="tel:4349969112" class="nav-cta">Call 434-996-9112</a></li>
-  </ul>
-  <button class="mobile-menu-btn" aria-label="Menu"><span></span><span></span><span></span></button>
+<div class="topbar">Proudly serving Albemarle, Nelson &amp; Augusta County, Virginia</div>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="brand">
+      <span class="brand-name">Capstone Property Collective</span>
+      <span class="brand-mark">Est. 2024 · Built on the Rock</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="problems.html">Problems We Solve</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="buyers.html">Buyers</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li class="nav-cta-li"><a href="tel:4349969112" class="nav-cta">Call Adam · 434-996-9112</a></li>
+    </ul>
+  </div>
 </nav>
 
-<section class="page-hero">
-  <h1>Whatever You're Dealing With, <em>We've Seen It Before.</em></h1>
-</section>
+<header class="page-hero">
+  <div class="hero-eyebrow">Problems We Solve</div>
+  <h1>Whatever you're dealing with, we've seen it before.</h1>
+  <p class="hero-sub">Solving problems is what we do.</p>
+</header>
 
-<section class="content-section dark">
-  <div class="content-inner reveal">
-    <ul class="problems-list">
-      <li class="problem-item">Are you facing divorce?</li>
-      <li class="problem-item">Complications with inheritance and heirs?</li>
-      <li class="problem-item">Dealing with probate?</li>
-      <li class="problem-item">Facing foreclosure?</li>
-      <li class="problem-item">Drowning in back taxes?</li>
-      <li class="problem-item">Going through bankruptcy?</li>
-      <li class="problem-item">Is your house falling apart?</li>
-      <li class="problem-item">Sitting on a vacant property?</li>
-      <li class="problem-item">Tired of being a landlord?</li>
+<section class="section">
+  <div class="section-inner">
+    <ul class="problem-list">
+      <li>Are you facing divorce?</li>
+      <li>Complications with inheritance or heirs?</li>
+      <li>Stuck in probate?</li>
+      <li>Facing foreclosure?</li>
+      <li>Drowning in back taxes?</li>
+      <li>Going through bankruptcy?</li>
+      <li>Is your house falling apart?</li>
+      <li>Sitting on a vacant property?</li>
+      <li>Tired of being a landlord?</li>
     </ul>
-    <p class="problems-closing">There isn't a situation too complicated for us. We love problems — that's what we do.</p>
+
+    <p class="problem-outro">There isn't a situation too complicated for us.<br />We love problems. That's what we do.</p>
   </div>
 </section>
 
-<section class="cta-section" id="contact">
-  <div class="cta-inner reveal">
-    <div class="section-label">Let's Talk</div>
-    <h2>No Matter What You're Facing, It Starts with a Conversation.</h2>
+<section class="section section-dark">
+  <div class="cta">
+    <div class="section-eyebrow">Let's Talk</div>
+    <h2><span class="nowrap">Whatever's going on,</span><br /><span class="nowrap">we've seen it all.</span></h2>
     <p class="cta-sub">One call. That's all it takes.</p>
-    <div class="cta-phone-large"><a href="tel:4349969112">434-996-9112</a></div>
-    <div class="cta-or">Or tell us about your situation</div>
-    <div class="form-container">
-      <form action="https://formspree.io/f/xkoqqeay" method="POST">
-        <div class="form-row">
-          <input type="text" name="name" placeholder="Your Name" required>
-          <input type="tel" name="phone" placeholder="Phone Number" required>
-        </div>
-        <div class="form-row">
-          <textarea name="situation" placeholder="Briefly describe your situation"></textarea>
-        </div>
-        <button type="submit" class="form-submit">Let's Talk</button>
-      </form>
-    </div>
+
+    <a href="tel:4349969112" class="cta-phone">434-996-9112</a>
+    <p class="cta-or">— or tell us a little about your situation —</p>
+
+    <form class="cta-form" action="https://formspree.io/f/xkoqqeay" method="POST">
+      <input type="hidden" name="path" value="Problems We Solve" />
+      <input type="text" name="name" placeholder="Your name" required />
+      <input type="tel" name="phone" placeholder="Your phone" required />
+      <textarea name="situation" placeholder="A little about your situation"></textarea>
+      <button type="submit" class="btn btn-primary">Send</button>
+    </form>
   </div>
 </section>
 
-<footer>
-  <div class="footer-left">Capstone <span>Property</span> Collective</div>
-  <div class="footer-center">
-    <a href="index.html">Home</a>
-    <a href="problems.html">Problems We Solve</a>
-    <a href="about.html">About</a>
-    <a href="buyers.html">Buyers</a>
-    <a href="contact.html">Contact</a>
-  </div>
-  <div class="footer-right">A Virginia LLC, Est. 2024</div>
+<footer class="footer">
+  <div class="footer-brand">Capstone Property Collective</div>
+  <p>41 Flying Eagle Court · Nellysford, VA</p>
+  <p>A Virginia LLC · Est. 2024 · Serving Albemarle, Nelson &amp; Augusta County</p>
+  <p style="margin-top:1rem;font-size:0.85rem;">
+    <a href="about.html">About</a> · <a href="contact.html">Contact</a> · <a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a> · <a href="tel:4349969112">434-996-9112</a>
+  </p>
 </footer>
 
-<script src="main.js"></script>
 </body>
 </html>
