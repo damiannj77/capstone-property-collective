@@ -4,8 +4,15 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Remodeling — Capstone Property Collective</title>
-<meta name="description" content="We buy, renovate and sell houses. A few times a year we open the calendar to a small number of homeowners. Kitchens, baths, additions, siding and roofing in Albemarle, Nelson and Augusta County." />
+<meta name="description" content="We buy, renovate and sell houses. Between our own projects we have room for two or three homeowners. Kitchen and bath remodels, additions, siding and roofing in Albemarle, Nelson and Augusta County." />
 <link rel="stylesheet" href="styles.css" />
+<style>
+  .spec-list { list-style: none; margin: 1.5rem 0 0; padding: 0; display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 0.9rem 2rem; }
+  .spec-list li { display: flex; align-items: flex-start; gap: 0.7rem; font-family: var(--sans); font-size: 1.08rem; color: var(--charcoal); line-height: 1.45; }
+  .spec-list li svg { flex: 0 0 auto; margin-top: 0.15rem; }
+  @media (max-width: 700px) { .spec-list { grid-template-columns: 1fr; } }
+  .build-note { font-size: 1.05rem; color: var(--charcoal-soft); line-height: 1.7; margin-top: 2.25rem; }
+</style>
 </head>
 <body>
 
@@ -28,18 +35,29 @@
 
 <header class="page-hero">
   <div class="hero-eyebrow">Remodeling</div>
-  <h1>We don't usually work on other people's homes.</h1>
-  <p class="hero-sub">Right now we have room for two or three.</p>
+  <h1>We're the only contractor who loses money when your job runs long.</h1>
+  <p class="hero-sub">A remodeling company's profit comes from the job. Ours comes from selling the house.</p>
+  <div class="hero-actions">
+    <a href="#start" class="btn btn-primary">Tell us about your project</a>
+    <a href="tel:4349969112" class="btn btn-secondary">Call Adam · 434-996-9112</a>
+  </div>
 </header>
 
 <!-- The argument -->
-<section class="section">
-  <div class="section-inner" style="max-width:46rem;">
-    <p style="font-size:1.15rem;color:var(--charcoal-soft);line-height:1.7;margin-bottom:1.25rem;">Buying, renovating and selling houses is the business, not a sideline. Our money buys the materials. Most of the year our calendar is full of our own projects, which is why you've probably never seen our sign in a yard that isn't ours.</p>
-
-    <p style="font-size:1.15rem;color:var(--charcoal-soft);line-height:1.7;margin-bottom:1.25rem;">That's also why we move fast. A remodeling company's profit comes from the job. Ours comes from selling the house, so we're the ones who pay for a job that drags. That makes us efficient in a way a remodeler never has to be.</p>
-
-    <p style="font-size:1.15rem;color:var(--charcoal-soft);line-height:1.7;">Justin, our GC, runs every one of our jobs and he works for nobody else. The trades on your house are the same ones we use on ours.</p>
+<section class="section section-paper">
+  <div class="section-inner">
+    <div class="two-col">
+      <div class="two-col-image">
+        <img src="images/crew-finished.jpg" alt="A finished Capstone renovation" />
+      </div>
+      <div class="two-col-text">
+        <div class="section-eyebrow">Why we're different</div>
+        <h2>We're not remodelers.</h2>
+        <p>Buying, renovating and selling houses is the business, not a sideline. Our money buys the materials, and most of the year our calendar is full of our own projects.</p>
+        <p>A remodeling company's profit comes from the job. Ours comes from selling the house, so we're the ones who pay for a job that drags. That makes us efficient in a way a remodeler never has to be.</p>
+        <p>Justin, our GC, runs every one of our jobs and he works for nobody else. The trades on your house are the same ones we use on ours.</p>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -55,15 +73,15 @@
     <div class="ba-pair">
       <div class="ba-grid">
         <div class="ba-frame before">
-          <img src="images/vermira-fireplace-before.jpg" alt="Vermira fireplace, before" />
+          <img src="images/vermira-family-before.jpg" alt="Vermira living room, before" />
           <span class="ba-label">Before</span>
         </div>
         <div class="ba-frame after">
-          <img src="images/vermira-fireplace-after.jpg" alt="Vermira fireplace, after" />
+          <img src="images/vermira-family-after.jpg" alt="Vermira living room, after" />
           <span class="ba-label">After</span>
         </div>
       </div>
-      <p class="ba-pair-caption">Brick and paneling, dark as a cave. Now whitewashed stone and a reclaimed beam mantel.</p>
+      <p class="ba-pair-caption">Wood paneling wall to wall, and a room nobody used. Now light, new floors, and a fireplace worth sitting by.</p>
     </div>
 
     <div class="ba-pair">
@@ -83,6 +101,20 @@
     <div class="ba-pair">
       <div class="ba-grid">
         <div class="ba-frame before">
+          <img src="images/vermira-bath-before.jpg" alt="Vermira full bath, before" />
+          <span class="ba-label">Before</span>
+        </div>
+        <div class="ba-frame after">
+          <img src="images/vermira-bath-after.jpg" alt="Vermira full bath, after" />
+          <span class="ba-label">After</span>
+        </div>
+      </div>
+      <p class="ba-pair-caption">Out went the blue. In came a clean, modern bath.</p>
+    </div>
+
+    <div class="ba-pair">
+      <div class="ba-grid">
+        <div class="ba-frame before">
           <img src="images/newton-exterior-before.jpg" alt="498 Newtown Road front, before" />
           <span class="ba-label">Before</span>
         </div>
@@ -94,39 +126,45 @@
       <p class="ba-pair-caption">Off came the tired vinyl. On went new Hardie plank, fresh paint, repaired soffits, and a custom door under a matching cedar overhang.</p>
     </div>
   </div>
+</section>
 
-  <div class="section-inner" style="max-width:46rem;text-align:center;margin-top:2rem;">
-    <a href="our-work.html" class="btn btn-secondary">See more of our work</a>
+<section class="section home-testimonial">
+  <div class="home-testimonial-inner">
+    <div class="section-eyebrow">From a homeowner</div>
+    <blockquote>"We felt the special attention you gave to our home. It's rare to find people who care and work together as well as you all and your team. We've already suggested your company to our neighbors."</blockquote>
+    <p class="home-testimonial-attrib">Homeowner · 498 Newtown Road, Greenwood</p>
   </div>
 </section>
 
-<!-- What we do / don't -->
-<section class="section">
+<!-- Exclusivity + availability -->
+<section class="section section-paper">
   <div class="section-inner" style="max-width:46rem;">
-    <div class="section-header">
-      <div class="section-eyebrow">Scope</div>
-      <h2>What we're set up for.</h2>
-    </div>
+    <div class="section-eyebrow">Availability</div>
+    <h2 style="margin-bottom:1.25rem;">Most of the year, we don't take outside work.</h2>
+    <p style="font-size:1.1rem;color:var(--charcoal-soft);line-height:1.7;margin-bottom:1.15rem;">Our calendar is full of our own projects. That's why you've probably never seen our sign in a yard that isn't ours.</p>
+    <p style="font-size:1.1rem;color:var(--charcoal-soft);line-height:1.7;margin-bottom:1.15rem;">But a few times a year we come out of a season with the calendar open. When that happens we take on a small number of homeowners and build for them exactly the way we build for ourselves. Same standards, same GC, same finish.</p>
+    <p style="font-size:1.1rem;color:var(--charcoal-soft);line-height:1.7;margin-bottom:1.15rem;">That's where we are right now. We've finished our summer projects and haven't started the next one, so before fall work begins we have room for two or three homeowners.</p>
+    <p style="font-size:1.1rem;color:var(--charcoal);line-height:1.7;font-weight:600;">When the fall projects start, the window closes.</p>
+  </div>
+</section>
 
-    <ul class="problem-list">
-      <li>Kitchens</li>
-      <li>Baths</li>
-      <li>Additions</li>
-      <li>Siding and roofing</li>
-      <li>Whole house renovations</li>
+<!-- Specialties -->
+<section class="section">
+  <div class="section-inner" style="max-width:50rem;">
+    <div class="section-eyebrow">What We Do</div>
+    <h2 style="margin-bottom:0.75rem;">We renovate entire houses, so we can do just about anything.</h2>
+    <p style="font-size:1.08rem;color:var(--charcoal-soft);">These are our specialties.</p>
+
+    <ul class="spec-list">
+      <li><svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10.5l4 4 8-9" fill="none" stroke="#5A6B4A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Kitchen remodels</span></li>
+      <li><svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10.5l4 4 8-9" fill="none" stroke="#5A6B4A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Bath remodels</span></li>
+      <li><svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10.5l4 4 8-9" fill="none" stroke="#5A6B4A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Additions</span></li>
+      <li><svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10.5l4 4 8-9" fill="none" stroke="#5A6B4A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Siding and roofing</span></li>
+      <li><svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10.5l4 4 8-9" fill="none" stroke="#5A6B4A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Whole house renovations</span></li>
+      <li><svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10.5l4 4 8-9" fill="none" stroke="#5A6B4A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Decks and porches</span></li>
     </ul>
 
-    <p style="font-size:1.15rem;color:var(--charcoal-soft);line-height:1.7;margin-top:2rem;">And what we're not. We aren't a handyman service and we don't take small repair work. Everyone in this trade says no job is too big or too small. Plenty of jobs are too small for us. That isn't a brag, it's how we're built: one GC, one full team, and a calendar that only opens a few times a year.</p>
-  </div>
-</section>
-
-<!-- The window -->
-<section class="section section-paper">
-  <div class="section-inner" style="max-width:46rem;text-align:center;">
-    <div class="section-eyebrow">Availability</div>
-    <h2 style="margin-bottom:1.25rem;">The window is open now.</h2>
-    <p style="font-size:1.15rem;color:var(--charcoal-soft);line-height:1.7;margin-bottom:1.25rem;">We've finished our summer projects and haven't started the next one. Before our fall work begins we have room for two or three homeowners, built to the same standard as the houses we own.</p>
-    <p style="font-size:1.15rem;color:var(--charcoal-soft);line-height:1.7;">When the fall projects start, the window closes.</p>
+    <p class="build-note">One thing we don't do is small repair work. We aren't a handyman service. Everyone in this trade says no job is too big or too small, and plenty of jobs are too small for us. That isn't a brag, it's how we're built: one GC, one full team, and a calendar that only opens a few times a year.</p>
   </div>
 </section>
 
@@ -144,7 +182,7 @@
   </div>
 </section>
 
-<section class="section section-dark">
+<section class="section section-dark" id="start">
   <div class="cta">
     <div class="section-eyebrow">Let's Talk</div>
     <h2><span class="nowrap">Got a project</span><br /><span class="nowrap">worth doing right?</span></h2>
